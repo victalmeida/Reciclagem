@@ -1,0 +1,19 @@
+.cadastrar
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardCadastrar
+{
+    /* height: 60vh; */
+    /* overflow: auto; */
+    /* background-color: #F9CF01; */
+    background-color: #A2BD32;
+    width: 40%;
+    color: white;
+    color: rgb(41, 41, 41);
+    padding: 5%;
+}
