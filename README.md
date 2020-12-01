@@ -1,2 +1,0 @@
-# Reciclagem
-Projeto Reciclagem
