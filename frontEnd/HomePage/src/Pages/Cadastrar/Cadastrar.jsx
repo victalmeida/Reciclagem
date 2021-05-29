@@ -1,10 +1,12 @@
-import React ,{useState} from 'react'
-import './Cadastrar.css'
-import {FormControl, Form , Button } from 'react-bootstrap';
+import React ,{useState} from 'react';
+import { Link } from 'react-router-dom';
+import './Cadastrar.css';
+import {FormControl, Form , Button} from 'react-bootstrap';
 import {NotificationContainer, NotificationManager} from 'react-notifications';
 import { Redirect } from "react-router-dom";
 import consts from '../../const'
-import Header from '../../Components/Header/Header'
+import Header from '../../Components/Header/Header';
+import logo from '../../assets/logo.png';
 
 const axios = require('axios').default;
 
@@ -57,50 +59,50 @@ const Cadastrar = () => {
         <>
         
             {redirect  && <Redirect to="/login" />}
-            
-        
              <NotificationContainer />
-            <Header />
-            <div className="cadastrar">
-               <div className="AlertCadastrar">
-              
-               </div>
-                <div className="cardCadastrar">
-         
-                    <Form >
+      
+<div className = 'container-center'>
+    <div className = 'login'>
+    <div className = 'logo-area'>
+        <img src={logo}/> 
+    </div>
+        <Form >
 
-                    <Form.Group controlId="Nome">
-                            <Form.Label>Digite seu Nome</Form.Label>
-                            <Form.Control type="text" id="nome" placeholder="INSIRA SEU NOME" />
-                        </Form.Group>
-
-
-                        <Form.Group controlId="Email">
-                            <Form.Label>Digite um Email para Cadastro</Form.Label>
-                            <Form.Control type="email" id="email" placeholder="INSIRA EMAIL" />
-                        </Form.Group>
-                    
-                        <Form.Group controlId="ConfirmationEmail">
-                            <Form.Label>Digite uma Senha</Form.Label>
-                            <Form.Control size="sm" type="password" id="senha" placeholder="INSIRA UMA SENHA" />
-                        </Form.Group>
-
-                        <Form.Group controlId="Password">
-                            {/* <Form.Label>Confirme sua Senha</Form.Label> */}
-                            <Form.Control size="sm" type="password" id="confirmSenha" placeholder="CONFIRME SUA SENHA" />
-                        </Form.Group>
+            <Form.Group controlId="Nome">
+                    <Form.Label>Nome</Form.Label>
+                    <Form.Control type="text" id="nome" placeholder="Nome" />
+                </Form.Group>
 
 
+                <Form.Group controlId="Email">
+                    <Form.Label>Email</Form.Label>
+                    <Form.Control type="email" id="email" placeholder="emial@email.com" />
+                </Form.Group>
 
+                <Form.Group controlId="ConfirmationEmail">
+                    <Form.Label>Senha</Form.Label>
+                    <Form.Control size="sm" type="password" id="senha" placeholder="*****" />
+                </Form.Group>
 
-                        <Button variant="dark" type="submit" style={{width:'100%'}} onClick={e => Validar(e) }> Enviar </Button>
-                    </Form>
-                </div>
-               
-            </div>
+                <Form.Group controlId="Password">
+                    {/* <Form.Label>Confirme sua Senha</Form.Label> */}
+                    <Form.Control size="sm" type="password" id="confirmSenha" placeholder="Confirme sua senha" />
+                </Form.Group>
+
+            <Button variant="dark" type="submit" style={{width:'100%'}} onClick={e => Validar(e) }> Enviar </Button>
+        </Form>
+
+        <Link to= '/'>ja tem uma conta? Entre.</Link>
+ 
+    </div>
+</div>
+    
         </>
     );
 
 }
 
 export default Cadastrar;
+//   <Link to= '/'>ja tem uma conta? Entre.</Link>
+
+

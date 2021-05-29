@@ -6,7 +6,6 @@ import {
   Link
 } from "react-router-dom";
 import PrivateRoute from './PrivateRoute'
-
 import Home from '../Pages/Home/Home'
 import Login from '../Pages/Login/Login'
 

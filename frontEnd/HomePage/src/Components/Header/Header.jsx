@@ -25,7 +25,7 @@ const Header = () => {
             <Nav className="justify-content-end" style={{ width: "100%" }}>
            <Nav.Link href="#home" className="" style={{ color: "black" }}>
            <Link to="/cadastrar">
-                <Button className=" btn-primary" > CADASTRAR </Button>
+                <Button className="btn-primary cadastrar" > CADASTRAR </Button>
             </Link>
             </Nav.Link> 
 

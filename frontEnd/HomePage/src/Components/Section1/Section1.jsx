@@ -21,7 +21,7 @@ const Section1 = ()=>{
                    <p className="textoSection1">Por um Mundo Melhor</p>
                 </Col>
             </Row>
-            </Container>
+        </Container>
         </div>
         </div>
     );

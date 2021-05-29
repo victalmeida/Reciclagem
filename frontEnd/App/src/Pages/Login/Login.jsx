@@ -1,4 +1,5 @@
-import React,{ useState, useEffect} from 'react'
+import React,{ useState, useEffect} from 'react';
+import {Link} from 'react-router-dom';
 import './Login.css';
 import { Container, Row, Col, InputGroup, FormControl , Form} from 'react-bootstrap';
 import { AiOutlineUser } from "react-icons/ai";
@@ -54,64 +55,44 @@ const Login = () => {
         <>
         { redirect && <Redirect to= "/" /> }
         <NotificationContainer />
-        <Header />
-        <div className="loginColumn" >
-       
-      
-     
-                {/* <Col xs={6}>
-                    <div className="loginColumn">
-                        <div className="logoCard">
-                            <img src={logo} className="logoLogin" alt=""/>
-                        </div>
-                    </div>
-                </Col> */}
+        <div className = 'container-center'>
+            <div className = 'login'>
+                <div className = 'logo-area'>
+                    <img src={logo}/> 
+                </div>
+                
+                <form action="/">
+                        <InputGroup className="mb-3">
+                            <InputGroup.Prepend>
+                                <InputGroup.Text id="Username"> <AiOutlineUser /> </InputGroup.Text>
+                            </InputGroup.Prepend>
+                            <FormControl
+                                placeholder="Username"
+                                aria-label="Username"
+                                aria-describedby="Username"
+                            />
+                        </InputGroup>
 
-              
-                    {/* <div className="loginColumn"> */}
-                        <div className=" loginCard">
-                            <div className="userIcon">
-                                <i>
-                                <AiOutlineUser size={150} />
-                                </i>
-                                <br/>
-                                USER LOGIN
+                        <InputGroup className="mb-3">
+                            <InputGroup.Prepend>
+                                <InputGroup.Text id="Senha" > <BsFillLockFill /> </InputGroup.Text>
+                            </InputGroup.Prepend>
+                            <FormControl
+                                placeholder="Senha"
+                                aria-label="Senha"
+                                aria-describedby="UserSenhaname"
+                                type="password"
+                            />
+                        </InputGroup>
 
-                            </div>
-                            
+                        <button className="btn btn-light w-100 btnLogin"> Login </button>
+                    </form>
 
-                            <Form  onSubmit={handleSalvar}>
-                                <InputGroup className="mb-3">
-                                    <InputGroup.Prepend>
-                                        <InputGroup.Text id="Username"> <AiOutlineUser /> </InputGroup.Text>
-                                    </InputGroup.Prepend>
-                                    <FormControl
-                                        id="email"
-                                        placeholder="Username"
-                                        aria-label="Username"
-                                        aria-describedby="Username"
-                                    />
-                                </InputGroup>
 
-                                <InputGroup className="mb-3">
-                                    <InputGroup.Prepend>
-                                        <InputGroup.Text id="Senha" > <BsFillLockFill /> </InputGroup.Text>
-                                    </InputGroup.Prepend>
-                                    <FormControl
-                                        id="password"
-                                        placeholder="Senha"
-                                        aria-label="Senha"
-                                        aria-describedby="UserSenhaname"
-                                        type="password"
-                                    />
-                                </InputGroup>
 
-                                <button type='submit' className="btn btn-light w-100 btnLogin"> LOGIN </button>
-                            </Form>
 
-                        {/* </div> */}
-                    </div>
-          
+                <Link to= '/'>Criar uma conta</Link>
+            </div>
         </div>
         </>
     );

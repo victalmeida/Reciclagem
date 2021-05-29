@@ -1,19 +1,61 @@
-.cadastrar
-{
-    height: 100vh;
+
+.container-center{
+    height: 100%;
+    height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #121212;
+}
+.login{
+    width: 40%;
+    background: #eaeacc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    transition: 1s;
+
+
+}
+.login a{
+    text-decoration: none;
+    color: #181c2e;
+    font-size: 18px;
+    padding:10px 0;
+}
+.login a:hover{
+   text-decoration:  inline #181c2e;
+   opacity: .7;
 }
 
-.cardCadastrar
-{
-    /* height: 60vh; */
-    /* overflow: auto; */
-    /* background-color: #F9CF01; */
-    background-color: #A2BD32;
-    width: 40%;
-    color: white;
-    color: rgb(41, 41, 41);
-    padding: 5%;
+.login form{
+    width: 90%;
+    text-align: left;
+    padding: 10px;
 }
+.login form input{
+    height: 40px;
+    border:none;
+    box-shadow: 0 0 20px rgb(0,0,0 .6);
+
+}
+.logo-area{
+    display: flex;
+    justify-content: center;
+    background: #181c2e;
+    width: 100%;
+}
+
+.logo-area img{
+    padding:10px;
+    width: 180px;
+    height: 120px;
+   
+}
+
+
+
+
+

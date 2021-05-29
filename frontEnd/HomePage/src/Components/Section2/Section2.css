@@ -7,10 +7,20 @@
 
 .imgCarrousel
 {
-    width: 100%;
-    height: 80vh;
+    width: 780px;
+    height: 90vh;
 }
 
+
 .Carrossel{
-    margin-top: 40vh;
+    margin-top: 20vh;
+}
+@media(max-width : 700px) {
+    .imgCarrousel{
+        width: 400px;
+        height: 300px;
+    }
+    .section2{
+        margin-top: -400px;
+    }
 }

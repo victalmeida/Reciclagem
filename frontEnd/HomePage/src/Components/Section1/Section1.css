@@ -37,8 +37,9 @@
     padding-top: 80vh;
     font-size: 8vh;
     /* color: rgb(255, 255, 255); */
-    color: black;
+    color: #000;
     font-family: 'Josefin Sans', cursive;
+    text-shadow: 0 0 20px rgba(2, 2, 2, .9);
    
 }
 
@@ -47,14 +48,17 @@
 {
     .textoSection1
     {
-        padding-top: 50vh;    
-        width: 100%;
-        font-size: 4vh;
+        font-size: 15px;
+        margin-top: -360px;
+        margin-left: -90px;
+        text-align: center; 
+
     }
+
     
     .section1
     {
-        height: 40vh;
+        height: 500px;
     }
    
 }
