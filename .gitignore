@@ -5,12 +5,10 @@
 #   git config --global core.excludesfile '~/.gitignore_global'
 
 
-BackEnd/node_modules/
-/BackEnd/node_modules/
+node_modules/
+/node_modules/
 
 
-frontEnd/HomePage/node_modules/
-/frontEnd/HomePage/node_modules/
 
-frontEnd/App/node_modules/
-/frontEnd/App/node_modules/
+
+
